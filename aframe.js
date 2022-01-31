@@ -34,7 +34,8 @@ AFRAME.registerComponent('carman', {
         let color3D = new THREE.Color(colorHex);
         for (var i = 0; i < self.cars.length; i++) {
           if (!self.cars[i].material)return
-          if (self.cars[i].name.includes("Cube") && !self.cars[i].name.includes("Cube.001_1")) {
+          if (self.cars[i].name.includes("Mesh.089_4")) {
+            console.log("self.cars[i].name test", self.cars[i].name);
             self.cars[i].material.metalness = 0.7
             self.cars[i].material.roughness = 0.2
             self.cars[i].material.color = color3D;
@@ -46,7 +47,7 @@ AFRAME.registerComponent('carman', {
         el.addEventListener('removecolor', e=>{
           for (var i = 0; i < self.cars.length; i++){
             if (!self.cars[i].material)return
-            if (self.cars[i].name.includes("Cube") && !self.cars[i].name.includes("Cube.001_1")) {
+            if (self.cars[i].name.includes("Mesh.089_4")) {
               self.cars[i].material.color = color[i];
               self.cars[i].material.metalness = metalness[i];
               self.cars[i].material.roughness = roughness[i];
