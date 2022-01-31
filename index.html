@@ -18,7 +18,7 @@
     <div id="colors">
       <div id="colors-list">
         <input name="#FF0000" type="checkbox" id="red">Red</input>
-        <input name="#43aa8b" type="checkbox" id="blue">Light Blue</input>
+        <input name="#0096c7" type="checkbox" id="blue">Light Blue</input>
         <input name="#007200" type="checkbox" id="green">Green</input>
         <input name="#FF5F1F" type="checkbox" id="orange">Orange</input>
       </div>
@@ -29,18 +29,18 @@
           <a-asset-item id="gltftree" src="https://cdn.glitch.com/fa31768d-daa2-4e3f-a525-5d4a9630e983%2FTreeSingle.glb"></a-asset-item>
           <a-assets-item id="testcar" src="https://cdn.glitch.com/a2e89b50-a717-44c7-9c2d-f89e7da157a3%2Fgsb021xpcar.glb?v=1587455480965"></a-assets-item>
           <a-asset-item id="car4" src="assets/lamborghini.glb"></a-asset-item>
+          <a-asset-item id="car5" src="assets/Mclaren_Senna.glb"></a-asset-item>
           <a-asset-item id="scene" src="assets/scene.glb"></a-asset-item>
           <a-asset-item id="scene2" src="assets/scene2.glb"></a-asset-item>
           <a-asset-item id="mc" src="assets/mclaren_senna.glb"></a-asset-item>
 
         </a-asset>   
           <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .clickable"></a-entity>
-          <a-entity camera orbit-controls="
-            initialPosition: -4 1"
-          ></a-entity>
-          <a-entity id="car" gltf-model="#mc" scale="0.5 0.5 0.5" carman></a-entity> 
+               
+          <a-entity id="car" gltf-model="#car5" scale="0.5 0.5 0.5" carman></a-entity>
+          <a-entity camera orbit-controls="initialPosition: -3 1"></a-entity> 
           <a-sky color="#023e8a" ></a-sky>
-        </a-scene>
+      </a-scene>
     </div>
   </body>
   <script src="./index.js"></script>
