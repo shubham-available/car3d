@@ -33,6 +33,7 @@ AFRAME.registerComponent('carman', {
 
 
       el.addEventListener('changecolor', e =>{
+        console.log("self.cars[i].name", self.cars);
         let colorp = e.detail;
         let colorHex = Number(colorp.replace('#', '0x'));
         let color3D = new THREE.Color(colorHex);
